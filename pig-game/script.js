@@ -10,7 +10,6 @@ const c2El = document.getElementById('current--1');
 const nEl = document.querySelector('.btn--new');
 
 const bhdEl = document.querySelector('.btn--hold');
-dcEl.classList.add('hidden');
 
 const sap = function () {
   document.getElementById(`current--${ap}`).textContent = 0;
@@ -35,6 +34,7 @@ const init = function () {
   p2El.classList.remove('player--winner');
   p1El.classList.add('player--active');
   p2El.classList.remove('player--active');
+  dcEl.classList.add('hidden');
 };
 
 init();
